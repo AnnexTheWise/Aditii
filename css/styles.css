@@ -1,0 +1,233 @@
+*{box-sizing: border-box;}
+
+:root {
+    --logocolor: #51c6ab;
+    --logo: 'Lobster', cursive;
+    --topNavBg: #4ccec2;
+    --bannerBg: #3dc4b6;
+    --sliderHover: #6ad5cd;
+    --headerTextColor: #a4a4a4;
+    --buttonColor: #3abf92;
+    --featuredColor: #3cc3b5;
+    --bottomFooter: #2ea89b;
+    --mainFont: 'Oswald', sans-serif;
+}
+
+.top-header {
+    padding-top: 20px;
+}
+
+.logo {
+    color: var(--logocolor);
+    font-family: var(--logo);
+    font-size: 40px;
+}
+
+.searchbar {
+    padding-bottom: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+.nav-button {
+    background-color: var(--topNavBg);
+    border: none;
+    font-weight: bold;
+}
+
+@media(min-width: 768px) {
+    .searchbar {
+        padding-top: 10px;
+    }
+    
+    input {
+        width: 80%;
+    }
+    
+    li {
+        display: inline;
+        padding: 0 7px;
+        font-size: calc(6px + (22 - 8) * ((100vw - 300px) / (1600 - 300)));
+        font-weight:bold;
+        text-transform: uppercase;
+        border-right: 3px solid white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+.cart {
+    font-size: 30px;
+}
+
+span {
+    color: var(--logocolor);
+}
+
+.top-nav {
+    background-color: var(--topNavBg);
+    padding: 2px;
+}
+
+.navigation-bar {
+    padding-top: 10px;
+}
+
+
+#contact-us {
+    border-right: none;
+}
+
+main
+
+.section1 {
+    background-color: var(--bannerBg);
+}
+
+.section1-box {
+    color: whitesmoke;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+@media(min-width:1440px) {
+    .section1-box {
+        width: 55%;
+    }
+}
+
+.section1-header {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: var(--mainFont); 
+}
+
+.shop-btn {
+    font-family: var(--mainFont);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 2px 18px;
+    border-radius: 7px;
+    background-color: var(--bannerBg);
+    color: whitesmoke;
+    border-color: whitesmoke;
+    border: 3px solid;
+}
+
+.section2-header {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: var(--headerTextColor);
+}
+
+@media(min-width:1024px) {
+    .section2-header {
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-bottom: 40px;
+        color: var(--headerTextColor);
+    }
+}
+
+.featured-heading {
+    background-color: var(--bannerBg);
+    font-size: 25px;
+    font-family: var(--mainFont);
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+@media (min-width:768px) {
+    .featured-heading {
+        background-color: var(--bannerBg);
+        font-size: 25px;
+        font-family: var(--mainFont);
+        text-transform: uppercase;
+        color: whitesmoke;
+        padding: 10px;
+        padding-left: 150px;
+    }
+}
+
+.section3 {
+    padding-bottom: 50px;
+}
+
+.section3-header {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--headerTextColor);
+    font-family: var(--mainFont);
+}
+
+.section3-text {
+    font-size: 25px;
+    padding: 10px 30px 0 30px;
+    text-transform: uppercase;
+    color: var(--headerTextColor);
+    font-family: var(--mainFont);
+}
+
+@media(min-width:768px) {
+    .section3-text {
+        font-size: 25px;
+        padding: 10px 40px 0 40px;
+        text-transform: uppercase;
+        color: var(--headerTextColor);
+        font-family: var(--mainFont);
+    }
+}
+
+.section3-btn-text {
+    padding-top: 10px;
+}
+
+.section3-button {
+    font-family: var(--mainFont);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 2px 10px;
+    border-radius: 7px;
+    background-color: var(--bannerBg);
+    color: whitesmoke;
+    border-color: whitesmoke;
+    border: 3px solid;
+}
+
+/* footer */
+
+.top-footer {
+    padding: 50px 0 50px 50px;
+    background-color: var(--bannerBg);
+}
+
+.top-footer-header {
+    font-size: 25px;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.footer-box p {
+    color: whitesmoke;
+}
+
+.bottom-footer {
+    background-color:var(--bottomFooter);
+} 
+
+.bottom-footer-text {
+    color: whitesmoke;
+    padding: 10px;
+    margin: 0 auto;
+}

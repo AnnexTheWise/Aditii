@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./css/flexbox.css"> -->
-    <!-- <link rel="stylesheet" href="./css/mpf.css"> -->
-    <link rel="stylesheet" href="./css/position.css">
-    <title>Aditii</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
 </head>
+
 <body>
-<header class="top-header">
-    <div class="top-bar">
-        <div class="inner top-bar-inner">
-            <h1 class="logo">Aditii</h1>
-            <form action="#link" class="search-form">
-                <input type="search" name="search" value="">
-            </form>
-            <p class="cart"><span class="sr-only"><svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></span>$300</p>           
+    <header class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 text-md-center">
+                    <h1 class="logo">Aditii</h1>
+                </div>
+                <div class="d-none d-md-block col-md-6 text-md-center">
+                    <form action="#link" class="search-form searchbar">
+                        <input type="search" name="search" value="">
+                    </form>
+                </div>
+                <div class="col-6 col-md-3 text-end text-md-center">
+                    <p class="cart"><span class="sr-only"><i class="bi bi-cart-fill"></i></span>$300</p>
+                </div>
+                <div class="d-md-none text-center">
+                    <form action="#link" class="search-form searchbar">
+                        <input type="search" name="search" value="">
+                    </form>
+                </div>
+
+            </div>
         </div>
-        <div class="clear"></div>
-    </div>
-    <nav class="top-nav">
-        <div class="inner top-nav-inner">
-            <ul class="nav-list">
+        <nav class="top-nav">
+            <div class="dropdown-center">
+                <div class="navigation-bar">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-sm-block d-md-none nav-button" type="button" data-bs-toggle="dropdown" ari>Menu</button>
+                    <ul class="nav-list dropdown-menu text-center">
+                        <li><a class="dropdown-item" href="link">home</a></li>
+                        <li><a class="dropdown-item" href="link">sale</a></li>
+                        <li><a class="dropdown-item" href="link">handbags</a></li>
+                        <li><a class="dropdown-item" href="link">wallets</a></li>
+                        <li><a class="dropdown-item" href="link">accesories</a></li>
+                        <li><a class="dropdown-item" href="link">men store</a></li>
+                        <li><a class="dropdown-item" href="link">shoes</a></li>
+                        <li><a class="dropdown-item" href="link">vintage</a></li>
+                        <li><a class="dropdown-item" href="link">services</a></li>
+                        <li id="contact-us"><a class="dropdown-item" href="link">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="d-none d-md-block nav-list text-center">
                 <li><a href="link">home</a></li>
                 <li><a href="link">sale</a></li>
                 <li><a href="link">handbags</a></li>
@@ -38,174 +69,246 @@
                 <li><a href="link">services</a></li>
                 <li id="contact-us"><a href="link">contact us</a></li>
             </ul>
-        </div>
-    </nav>
-</header>
-<main class="main">
-    <section class="section1">
-        <div class="inner">
-            <img src="./media/white Levi.jpg" alt="levi image" class="levi-img" />
-            <div class="section1-box">
-                <h1 class="section1-header">cowhide standard crew</h1>
-                <p class="section1-text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew neck T-shirt is made of organic cotton and comes in a regular fit</p>
-                <button class="shop-now-btn">shop now</button>
-                <div class="sliders">
-                    <div class="slider" id="slider1"></div>
-                    <div class="slider" id="slider2"></div>
-                    <div class="slider" id="slider3"></div>
-                    <div class="slider" id="slider4"></div>
-                    <div class="slider" id="slider5"></div>
+        </nav>
+    </header>
+    <main class="main-section">
+        <section class="section1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img src="./media/white Levi.jpg" alt="levi image" class="levi-img img-fluid d-block w-50" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section1-box">
+                            <h1 class="section1-header text-center text-md-start">cowhide standard crew</h1>
+                            <p class="section1-text text-center text-md-start">White coloured, short-sleeved, printed T-shirt for men by Levi's.
+                                This crew neck T-shirt is made of organic cotton and comes in a regular fit</p>
+                            <p class="shop-now-text text-center text-md-start text-uppercase">
+                                <a class="shop-now-btn btn btn-outline-light" href="#link">shop now</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <img src="./media/branded shoes.jpg" class="img-fluid rounded-start d-block w-100"
+                                        alt="Brown Dress Shoes Image">
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title section2-header">Branded Shoes</h5>
+                                        <button class="shop-btn">shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <img src="./media/branded tshirts.jpg" class="img-fluid rounded-start d-block w-100"
+                                        alt="Gray T-shirt Image">
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title section2-header">Branded Shirts</h5>
+                                        <button class="shop-btn">shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <img src="./media/branded pants.jpg" class="img-fluid rounded-start d-block w-100"
+                                        alt="Brown Cargo Pants Image">
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title section2-header">Branded Pants</h5>
+                                        <button class="shop-btn">shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="section2">
-        <div class="inner">
-            <div class="section2-box1">
-                <img src="./media/branded shoes.jpg" alt="branded shoes image" class="section2-shoes" />
-                <div class="box-wrapper">
-                    <h3 class="section2-header">Branded Shoes</h3>
-                    <button class="shop-btn">shop</button>
+        <section class="section3">
+            <h2 class="featured-heading text-center text-md-start">featured products</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 g-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./media/Red Heelss.jpg" class="card-img-top" alt="Pair of Red Heels Image">
+                            <div class="card-body">
+                              <h5 class="card-title text-center text-uppercase section3-header">Branded Shoe</h5>
+                                <div class="section3-box d-flex">
+                                    <p class="card-text section3-text">$300</p>
+                                    <p class="card-text section3-btn-text"><a href="#link" class="btn btn-primary section3-button">buy now</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 g-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./media/black shirt.jpg" class="card-img-top" alt="Pair of Black Shirt Image">
+                            <div class="card-body">
+                              <h5 class="card-title text-center text-uppercase section3-header">Branded Tees</h5>
+                                <div class="section3-box d-flex">
+                                    <p class="card-text section3-text">$300</p>
+                                    <p class="card-text section3-btn-text"><a href="#link" class="btn btn-primary section3-button">buy now</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 g-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./media/light gray shirt.jpg" class="card-img-top" alt="Pair of Light Gray Shirt Image">
+                            <div class="card-body">
+                              <h5 class="card-title text-center text-uppercase section3-header">Branded Tees</h5>
+                                <div class="section3-box d-flex">
+                                    <p class="card-text section3-text">$300</p>
+                                    <p class="card-text section3-btn-text"><a href="#link" class="btn btn-primary section3-button">buy now</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 g-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./media/wallet.jpg" class="card-img-top" alt="Black Wallet Image">
+                            <div class="card-body">
+                              <h5 class="card-title text-center text-uppercase section3-header">Branded Wallet</h5>
+                                <div class="section3-box d-flex">
+                                    <p class="card-text section3-text">$300</p>
+                                    <p class="card-text section3-btn-text"><a href="#link" class="btn btn-primary section3-button">buy now</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 g-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./media/purse.jpg" class="card-img-top" alt="Beige Purse Image">
+                            <div class="card-body">
+                              <h5 class="card-title text-center text-uppercase section3-header">Branded Purse</h5>
+                                <div class="section3-box d-flex">
+                                    <p class="card-text section3-text">$300</p>
+                                    <p class="card-text section3-btn-text"><a href="#link" class="btn btn-primary section3-button">buy now</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 g-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./media/branded pants.jpg" class="card-img-top" alt="Pair of Brown Cargos Image">
+                            <div class="card-body">
+                              <h5 class="card-title text-center text-uppercase section3-header">Branded Cargos</h5>
+                                <div class="section3-box d-flex">
+                                    <p class="card-text section3-text">$300</p>
+                                    <p class="card-text section3-btn-text"><a href="#link" class="btn btn-primary section3-button">buy now</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="section2-box2">
-                <img src="./media/branded tshirts.jpg" alt="branded tshirts image" class="section2-tshirts"  />
-                <div class="box-wrapper">
-                    <h3 class="section2-header">Branded Tshirts</h3>
-                    <button class="shop-btn">shop</button>
+        </section>
+        <footer class="footer-section">
+            <section class="top-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-box" id="footer1">
+                                <h3 class="top-footer-header">featured sale</h3>
+                                <p>Alexis Hudson</p>
+                                <p>American Apparel</p>
+                                <p>Ben Sherman</p>
+                                <p>Big Bhudda</p>
+                                <p>Chanel</p>
+                                <p>Christian Audigier</p>
+                                <p>Coach</p>
+                                <p>Cole Haan</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-box" id="footer1">
+                                <h3 class="top-footer-header">featured sale</h3>
+                                <p>Alexis Hudson</p>
+                                <p>American Apparel</p>
+                                <p>Ben Sherman</p>
+                                <p>Big Bhudda</p>
+                                <p>Chanel</p>
+                                <p>Christian Audigier</p>
+                                <p>Coach</p>
+                                <p>Cole Haan</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-box" id="footer1">
+                                <h3 class="top-footer-header">featured sale</h3>
+                                <p>Alexis Hudson</p>
+                                <p>American Apparel</p>
+                                <p>Ben Sherman</p>
+                                <p>Big Bhudda</p>
+                                <p>Chanel</p>
+                                <p>Christian Audigier</p>
+                                <p>Coach</p>
+                                <p>Cole Haan</p>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-box" id="footer1">
+                                <h3 class="top-footer-header">featured sale</h3>
+                                <p>Alexis Hudson</p>
+                                <p>American Apparel</p>
+                                <p>Ben Sherman</p>
+                                <p>Big Bhudda</p>
+                                <p>Chanel</p>
+                                <p>Christian Audigier</p>
+                                <p>Coach</p>
+                                <p>Cole Haan</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="section2-box3">  
-                <img src="./media/branded pants.jpg" alt="branded pants image" class="section2-pants" />
-                <div class="box-wrapper">
-                    <h3 class="section2-header">Branded Pants</h3>
-                    <button class="shop-btn">shop</button>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section3">
-            <h2 class="featured-heading">featured products</h2>
-        <div class="inner">
-            <figure class="featured-product" id="product1">
-                <div class="box-wrapper">
-                    <img src="./media/Red Heelss.jpg" alt="red heels image" class="section3-img">
-                    <h2 class="section3-h3">branded shoes</h3>
-                    <p class="section3-p">$300</p>
-                    <button class="buy-now-btn">buy now</button>
-                </div>
-            </figure>
-            <figure class="featured-product" id="product2">    
-                <div class="box-wrapper">
-                    <img src="./media/black shirt.jpg" alt="black shirt image" class="section3-img">
-                    <h3 class="section3-h3">branded tee</h3>
-                    <p class="section3-p">$300</p>
-                    <button class="buy-now-btn">buy now</button>
-                </div>
-            </figure>
-            <figure class="featured-product" id="product3">
-                <div class="box-wrapper">
-                    <img src="./media/light gray shirt.jpg" alt="light gray shirt image" class="section3-img">
-                    <h3 class="section3-h3">branded tee</h3>
-                    <p class="section3-p">$300</p>
-                    <button class="buy-now-btn">buy now</button>
-                </div>
-            </figure>
-            <figure class="featured-product" id="product4">
-                <div class="box-wrapper">
-                    <img src="./media/wallet.jpg" alt="wallet image" class="section3-img">
-                    <h3 class="section3-h3">branded wallet</h3>
-                    <p class="section3-p">$300</p>
-                    <button class="buy-now-btn">buy now</button>
-                </div>
-            </figure>
-            <figure class="featured-product" id="product5"> 
-                <div class="box-wrapper">
-                    <img src="./media/purse.jpg" alt="purse image" class="section3-img">
-                    <h3 class="section3-h3">ems womens bag</h3>
-                    <p class="section3-p">$300</p>
-                    <button class="buy-now-btn">buy now</button>
-                </div>               
-            </figure>
-            <figure class="featured-product" id="product6">
-                <div class="box-wrapper">    
-                    <img src="./media/branded pants.jpg" alt="cargo pants image" class="section3-img">
-                    <h3 class="section3-h3">branded cargo</h3>
-                    <p class="section3-p">$300</p>
-                    <button class="buy-now-btn">buy now</button>
-                </div>
-            </figure>
-        </div>
-    </section>
-</main> 
-<footer>
-    <section class="top-footer">
-        <div class="inner">
-            <div class="footer-box" id="footer1">
-                <h3 class="top-footer-header">featured sale</h3>
-                <p>Alexis Hudson</p>
-                <p>American Apparel</p>
-                <p>Ben Sherman</p>
-                <p>Big Bhudda</p>
-                <p>Chanel</p>
-                <p>Christian Audigier</p>
-                <p>Coach</p>
-                <p>Cole Haan</p>
-            </div>
-            <div class="footer-box" id="footer2">
-                <h3 class="top-footer-header">men's store</h3>
-                <p>Alexis Hudson</p>
-                <p>American Apparel</p>
-                <p>Ben Sherman</p>
-                <p>Big Bhudda</p>
-                <p>Chanel</p>
-                <p>Christian Audigier</p>
-                <p>Coach</p>
-                <p>Cole Haan</p>
-            </div>
-            <div class="footer-box" id="footer3">
-                <h3 class="top-footer-header">women store</h3>
-                <p>Alexis Hudson</p>
-                <p>American Apparel</p>
-                <p>Ben Sherman</p>
-                <p>Big Bhudda</p>
-                <p>Chanel</p>
-                <p>Christian Audigier</p>
-                <p>Coach</p>
-                <p>Cole Haan</p>
-            </div>
-            <div class="footer-box" id="footer4">
-                <h3 class="top-footer-header">quick links</h3>
-                <p>Alexis Hudson</p>
-                <p>American Apparel</p>
-                <p>Ben Sherman</p>
-                <p>Big Bhudda</p>
-                <p>Chanel</p>
-                <p>Christian Audigier</p>
-                <p>Coach</p>
-                <p>Cole Haan</p>
-            </div>
-        </div>
-
-    </section>
-    <section class="bottom-footer">
-        <div class="inner">    
-            <p>Copyright 2013 @ Css Author</p>
-        </div>
-    </section>
-</footer>
-</body>
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            </section>
+            <section class="bottom-footer">
+                <p class="bottom-footer-text text-center">Developed by &copy;AnnexDevelopment 2022 Privacy Policy</p>
+            </section>
+        </footer>
+    </main>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-    <symbol id="icon-cart" viewBox="0 0 32 32">
-    <path d="M12 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
-    <path d="M32 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
-    <path d="M32 16v-12h-24c0-1.105-0.895-2-2-2h-6v2h4l1.502 12.877c-0.915 0.733-1.502 1.859-1.502 3.123 0 2.209 1.791 4 4 4h24v-2h-24c-1.105 0-2-0.895-2-2 0-0.007 0-0.014 0-0.020l26-3.98z"></path>
-    </symbol>
-    <symbol id="icon-search" viewBox="0 0 32 32">
-    <path d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
-    </symbol>
+        <symbol id="icon-cart" viewBox="0 0 32 32">
+            <path d="M12 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+            <path d="M32 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+            <path
+                d="M32 16v-12h-24c0-1.105-0.895-2-2-2h-6v2h4l1.502 12.877c-0.915 0.733-1.502 1.859-1.502 3.123 0 2.209 1.791 4 4 4h24v-2h-24c-1.105 0-2-0.895-2-2 0-0.007 0-0.014 0-0.020l26-3.98z">
+            </path>
+        </symbol>
+        <symbol id="icon-search" viewBox="0 0 32 32">
+            <path
+                d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z">
+            </path>
+        </symbol>
     </defs>
-    </svg>    
+</svg>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+
 </html>
